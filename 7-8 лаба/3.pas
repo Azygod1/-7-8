@@ -1,0 +1,12 @@
+﻿Program KirillP;
+var s:string; l:integer;
+begin
+write('Введите строку: ');
+readln(s);
+writeln('Первый символ: ',s[1]);
+l:=length(s);
+writeln('Последний символ: ',s[l]);
+if l mod 2 = 1
+ then writeln('Средний символ: ',s[l div 2+1])
+ else writeln('Длина строки четна');
+end.
